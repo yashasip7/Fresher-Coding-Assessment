@@ -2,8 +2,6 @@
 
 The goal of this problem is to create a Music Library Manager in a step-by-step process, incrementally adding features. You will need to build a CLI (Command Line Interface).
 
-TODO: Provide example folders with relevant music files.
-
 ## Step 1: List Files
 
 Set up the project in the language of your choice. Define the basic structure of the program, and get a working implementation of taking a directory as an input, and list down all the music files present in that folder recursively.
