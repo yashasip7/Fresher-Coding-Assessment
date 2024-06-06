@@ -19,9 +19,9 @@ The problems outlined here are “toy” problems, but please solve them in as p
 
 There are 3 problems defined in this repository:
 
-[music](music/README.md)
-[mastodon](mastodon/README.md)
-[transformer](transformer/README.md)
+- [music](music/README.md)
+- [mastodon](mastodon/README.md)
+- [transformer](transformer/README.md)
 
 Each problem has a folder for it. The problem definition, and details on what is expected in each problem is in the README of each folder.
 
