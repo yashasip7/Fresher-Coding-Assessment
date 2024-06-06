@@ -51,7 +51,7 @@ On each status shown in Steps 2 and 3, add support for the signed in user to tak
 - Favorite the status
 - Follow the author of the status
 
-TODO: INSERT FIGMA PROTOTYPE LINK
+[Figma Prototype Link](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=1-161501&t=35hcrkq3jWlsWAeY-4)
 
 ### Step 5: Build a Profile Page
 
