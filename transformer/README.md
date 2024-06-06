@@ -314,7 +314,7 @@ When user runs the following command:
 <program> interview_score --input <path to cleaned normalized input parquet file with weighted net score> --output <path to output csv file>
 ```
 
-You should produce an output file that looks liek this:
+You should produce an output file that looks like this:
 
 | College Name                    | College ID | USN     | Student Name | Weighted Net Score | First-Round Interviewer Score | Second-Round Interviewer Score | Final Candidate Score |
 | ------------------------------- | ---------- | ------- | ------------ | ------------------ | ----------------------------- | ------------------------------ | --------------------- |
