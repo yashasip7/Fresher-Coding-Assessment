@@ -35,7 +35,7 @@ Build a Login Page that allows the user to sign in to a mastodon server.
 
 Using the [public timeline API](https://docs.joinmastodon.org/methods/timelines/#public) show the latest 20 statuses in reverse chronological order (i.e., newest on top).
 
-TODO: INSERT FIGMA PROTOTYPE LINK
+[Figma Prototype Link](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=1-161415&t=35hcrkq3jWlsWAeY-4)
 
 ### Step 3: Enable Scrolling of Public Timeline
 
