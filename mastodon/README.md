@@ -57,7 +57,7 @@ On each status shown in Steps 2 and 3, add support for the signed in user to tak
 
 Build a profile page for the currently logged-in user as outlined in the wireframe:
 
-TODO: INSERT FIGMA PROTOTYPE LINK
+[Figma Prototype Link](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=1-170786&t=35hcrkq3jWlsWAeY-4)
 
 ### Step 6: Enable Profile Pages for All Users
 
