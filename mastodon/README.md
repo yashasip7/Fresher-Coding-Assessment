@@ -1,6 +1,6 @@
 # Mastodon Client
 
-The goal of this problem is to create a frontend application that connects to the Mastodon API, incrementally adding features. Mastodon is an open alternative to microblogging services like Twitter/Threads.
+The goal of this problem is to create a frontend application that connects to the Mastodon API, incrementally adding features. Mastodon is an open alternative to micro-blogging services like Twitter/Threads.
 
 You can build your front end for any one of these platforms:
 
@@ -9,7 +9,7 @@ You can build your front end for any one of these platforms:
   - Native iOS
   - Native Android
   - Flutter
-  - Any other cross platform framework of your choice
+  - Any other cross-platform framework of your choice
 
 You are free to use any frameworks/libraries of your choice for your platform of choice.
 
@@ -29,7 +29,7 @@ Build a Login Page that allows the user to sign in to a mastodon server.
 TODO: INSERT FIGMA PROTOTYPE LINK
 
 - Username and password fields should have basic validations like: fields should not be empty when form is submitted.
-- The user should be able to enter username and password and, upon submission, get an access token which can be used in further steps.
+- The user should be able to enter username and password, and upon submission, get an access token which can be used in further steps.
 
 ### Step 2: Show Public Timeline
 

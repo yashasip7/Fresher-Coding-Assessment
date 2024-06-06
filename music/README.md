@@ -74,13 +74,13 @@ Once you are able to read metadata, it’s time to organize the files accordingl
 Suppose that, in a particular music library, the user has the following songs:
 
 ```text
-- Music/
-	- Thriller.mp3
-	- Shake It Off.mp3
-	- Billie Jean.mp3
-	- Bad Blood.mp3
-	- Smooth Criminal.mp3
-	- Anti-Hero.mp3
+Music
+├── Anti-Hero.mp3
+├── Bad Blood.mp3
+├── Billie Jean.mp3
+├── Shake It Off.mp3
+├── Smooth Criminal.mp3
+└── Thriller.mp3
 ```
 
 The user should be able to organize it in the following way:
@@ -95,16 +95,16 @@ When user runs the following command:
 
 The output should be like this:
 
-```
-- Music/
-	- Michael Jackson/
-		- Thriller.mp3
-		- Billie Jean.mp3
-		- Smooth Criminal.mp3
-	- Taylor Swift/
-		- Shake It Off.mp3
-		- Bad Blood.mp3
-		- Anti-Hero.mp3
+```text
+Music
+├── Michael Jackson
+│   ├── Billie Jean.mp3
+│   ├── Smooth Criminal.mp3
+│   └── Thriller.mp3
+└── Taylor Swift
+    ├── Anti-Hero.mp3
+    ├── Bad Blood.mp3
+    └── Shake It Off.mp3
 ```
 
 #### By Album
@@ -118,17 +118,17 @@ When user runs the following command:
 The output should be like this:
 
 ```text
-- Music/
-	- Thriller/
-		- Thriller.mp3
-		- Billie Jean.mp3
-	- Bad 25/
-		- Smooth Criminal.mp3
-	- 1989/
-		- Shake It Off.mp3
-		- Bad Blood.mp3
-	- Midnights/
-		- Anti-Hero.mp3
+Music
+├── 1989
+│   ├── Bad Blood.mp3
+│   └── Shake It Off.mp3
+├── Bad
+│   └── Smooth Criminal.mp3
+├── Midnights
+│   └── Anti-Hero.mp3
+└── Thriller
+    ├── Billie Jean.mp3
+    └── Thriller.mp3
 ```
 
 #### By Artist and Album
@@ -142,19 +142,19 @@ When user runs the following command:
 The output should be like this:
 
 ```text
-- Music/
-	- Michael Jackson/
-		- Thriller/
-			- Thriller.mp3
-			- Billie Jean.mp3
-		- Bad 25/
-			- Smooth Criminal.mp3
-	- Taylor Swift
-		- 1989/
-			- Shake It Off.mp3
-			- Bad Blood.mp3
-		- Midnights/
-			- Anti-Hero.mp3
+Music
+├── Michael Jackson
+│   ├── Bad
+│   │   └── Smooth Criminal.mp3
+│   └── Thriller
+│       ├── Billie Jean.mp3
+│       └── Thriller.mp3
+└── Taylor Swift
+    ├── 1989
+    │   ├── Bad Blood.mp3
+    │   └── Shake It Off.mp3
+    └── Midnights
+        └── Anti-Hero.mp3
 ```
 
 Files that do not have an album should be put in a `Singles` folder. Files with incomplete metadata should be put in a separate folder called `Incomplete Metadata`.

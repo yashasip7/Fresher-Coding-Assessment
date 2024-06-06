@@ -6,7 +6,8 @@ This repository is where you will attempt your coding assessment for Surya Digit
 
 # IF INSTRUCTIONS ARE NOT FOLLOWED EXACTLY, YOUR SUBMISSION WILL NOT BE CONSIDERED.
 
-I will repeat this: Please read all instructions carefully and completely before starting. We keep repeating ourselves on this topic, but every year we find that the majority of students do not read and follow instructions outlined for them. If instructions are not followed exactly, your submission will not be considered.
+> [!WARNING]
+> I will repeat this: Please read all instructions carefully and completely before starting. We keep repeating ourselves on this topic, but every year we find that the majority of students do not read and follow instructions outlined for them. If instructions are not followed exactly, your submission will not be considered.
 
 ---
 
@@ -18,11 +19,9 @@ The problems outlined here are “toy” problems, but please solve them in as p
 
 There are 3 problems defined in this repository:
 
-```
-music
-mastodon
-transformer
-```
+[music](music/README.md)
+[mastodon](mastodon/README.md)
+[transformer](transformer/README.md)
 
 Each problem has a folder for it. The problem definition, and details on what is expected in each problem is in the README of each folder.
 
@@ -46,7 +45,7 @@ You are free to use any framework/language/libraries of your choice. Common choi
 - SwiftUI
 - Jetpack Compose
 
-You are not required to use one of the above - you are free to use any framework or language of your choice. If however you are using something not on the list above, please include clear instructions on how to run your project.
+You are not required to use one of the above - you are free to use any framework or language of your choice. If, however, you are using something not on the list above, please include clear instructions on how to run your project.
 
 Put your solution within the specific folder of your problem. For example, if you are working on `music`, please put your entire solution under the `music` folder. If you put it at the root of the repository, or in any place other than the relevant problem folder, your solution will not be considered.
 
@@ -63,6 +62,6 @@ If your solution runs successfully, you will receive a grade based primarily on 
 - Code quality (clear structuring of code, proper naming, etc.)
 - Hygiene (proper git usage, correct spelling & grammar, proper formatting, etc.)
 - Attention to detail
-- How many sub-problems you successfully completed
+- How many steps you successfully completed
 
-We value quality over quantity. For example, solving 3 sub-problems poorly will be graded lower than solving 2 sub-problems well.
+We value quality over quantity. For example, solving 3 steps poorly will be graded lower than solving 2 steps well.
