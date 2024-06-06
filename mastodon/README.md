@@ -26,7 +26,7 @@ You will need to use the Mastodon API for this problem, so it helps to use [the 
 
 Build a Login Page that allows the user to sign in to a mastodon server.
 
-TODO: INSERT FIGMA PROTOTYPE LINK
+[Figma Design Link](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=3-2071&t=35hcrkq3jWlsWAeY-4)
 
 - Username and password fields should have basic validations like: fields should not be empty when form is submitted.
 - The user should be able to enter username and password, and upon submission, get an access token which can be used in further steps.
