@@ -1,6 +1,6 @@
 # Mastodon Client
 
-The goal of this problem is to create a frontend application that connects to the Mastodon API, incrementally adding features. Mastodon is an open alternative to micro-blogging services like Twitter/Threads.
+The goal of this problem is to create a frontend application that connects to the Mastodon API, incrementally adding features. Mastodon is an alternative to micro-blogging services like X (formerly Twitter)/Threads.
 
 You can build your front end for any one of these platforms:
 
@@ -13,7 +13,7 @@ You can build your front end for any one of these platforms:
 
 You are free to use any frameworks/libraries of your choice for your platform of choice.
 
-We have provided Figma links that show you a wireframe of what your UI should look like, both for mobile, and tablet/desktop. Start with UI for either mobile or tablet/desktop. You will recieve extra credit for having support for both mobile and tablet/desktop layouts if you choose to implement both. You are welcome to use any look and feel you feel is best, but your implementation cannot deviate dramatically from the provided wireframes.
+We have provided Figma links that show you a wireframe of what your UI should look like, both for mobile and tablet/desktop. Start with UI for either mobile or tablet/desktop. You will receive extra credit for having support for both mobile and tablet/desktop layouts if you choose to implement both. You are welcome to use any look and feel you feel is best, but your implementation cannot deviate dramatically from the provided wireframes.
 
 You will need to use the Mastodon API for this problem, so it helps to use [the documentation](https://docs.joinmastodon.org/client/intro/) as a reference.
 
@@ -28,16 +28,16 @@ TODO: Insert figma links to complete desktop and mobile prototypes
 
 Build a Login Page that allows the user to sign in to a mastodon server.
 
-[Figma](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=3-2071&t=35hcrkq3jWlsWAeY-4)
+[Figma Design](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=3-2071&t=35hcrkq3jWlsWAeY-4)
 
 - Username and password fields should have basic validations like: fields should not be empty when form is submitted.
-- The user should be able to enter username and password, and upon submission, get an access token which can be used in further steps.
+- The user should be able to enter username and password, and upon submission, be able to use the app in the following steps.  
 
 ### Step 2: Show Public Timeline
 
 Using the [public timeline API](https://docs.joinmastodon.org/methods/timelines/#public) show the latest 20 statuses in reverse chronological order (i.e., newest on top).
 
-[Figma](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=1-161415&t=35hcrkq3jWlsWAeY-4)
+[Figma Design](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=1-161415&t=35hcrkq3jWlsWAeY-4)
 
 ### Step 3: Enable Scrolling of Public Timeline
 
@@ -53,7 +53,7 @@ On each status shown in Steps 2 and 3, add support for the signed in user to tak
 - Favorite the status
 - Follow the author of the status
 
-[Figma](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=1-161501&t=35hcrkq3jWlsWAeY-4)
+[Figma Design](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=1-161501&t=35hcrkq3jWlsWAeY-4)
 
 ### Step 5: Build a Profile Page
 
