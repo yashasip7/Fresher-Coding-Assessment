@@ -23,7 +23,9 @@ There are 3 problems defined in this repository:
 - [mastodon](mastodon/README.md)
 - [transformer](transformer/README.md)
 
-Each problem has a folder for it. The problem definition, and details on what is expected in each problem is in the README of each folder.
+Each problem has a folder for it. The problem definition, and details on what is expected in each problem is in the README of each folder. 
+
+Each problem has been divided into “steps”, i.e., small features that can be completed one after the other, as they build incrementally on top of each other. 
 
 Please read all the problem statements before you start. Each of the problems is designed to leverage a different set of skills. **It is unlikely that you will have the time to take on more than one problem**. Pick the problem that is the best match for your abilities and skills, and solve it.
 
@@ -49,7 +51,7 @@ You are not required to use one of the above - you are free to use any framework
 
 Put your solution within the specific folder of your problem. For example, if you are working on `music`, please put your entire solution under the `music` folder. If you put it at the root of the repository, or in any place other than the relevant problem folder, your solution will not be considered.
 
-Please ensure that you _push_ your changes to the GitHub repository, to the `main` branch. If your final solution is not pushed to the `main` branch of the GitHub repository, your submission cannot be considered. You can verify this by viewing the repository contents on github.com.
+Please ensure that you _push_ your changes to the GitHub repository, to the `main` branch. If your final solution is not pushed to the `main` branch of the GitHub repository, your submission will not be considered.
 
 ## Evaluation Criteria
 
@@ -64,4 +66,4 @@ If your solution runs successfully, you will receive a grade based primarily on 
 - Attention to detail
 - How many steps you successfully completed
 
-We value quality over quantity. For example, solving 3 steps poorly will be graded lower than solving 2 steps well.
+We value quality over quantity. For example, solving 3 steps poorly will be graded lower than solving 2 steps well. Half-completed steps won't be considered for submission.
