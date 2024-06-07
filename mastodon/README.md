@@ -17,7 +17,10 @@ We have provided Figma links that show you a wireframe of what your UI should lo
 
 You will need to use the Mastodon API for this problem, so it helps to use [the documentation](https://docs.joinmastodon.org/client/intro/) as a reference.
 
-TODO: Insert figma links to complete desktop and mobile prototypes
+Design Links:
+
+- [Desktop Designs](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=3-2071&t=RtOzH7yk4J4ByBY6-4)
+- TODO: ADD MOBILE DESIGNS LINK
 
 ## Prerequisites
 
@@ -43,7 +46,7 @@ Using the [public timeline API](https://docs.joinmastodon.org/methods/timelines/
 
 As an extension to Step 2, if the user scrolls down on the public timeline, fetch the next 20 statuses. Keep doing this, in an “infinite” scroll manner, as the user continues scrolling.
 
-TODO: INSERT FIGMA PROTOTYPE LINK
+[Figma Design](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=26-10211&t=RtOzH7yk4J4ByBY6-4)
 
 ### Step 4: Enable Status Actions
 
@@ -59,13 +62,13 @@ On each status shown in Steps 2 and 3, add support for the signed in user to tak
 
 Build a profile page for the currently logged-in user as outlined in the wireframe:
 
-[Figma](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=1-170786&t=35hcrkq3jWlsWAeY-4)
+[Figma Design](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=1-170786&t=35hcrkq3jWlsWAeY-4)
 
 ### Step 6: Enable Profile Pages for All Users
 
 Make the author of each status shown in the public timeline tappable/clickable. When a user taps on the author, it should show the profile page for that user.
 
-TODO: INSERT FIGMA PROTOTYPE LINK
+[Figma Design](https://www.figma.com/design/GA5PmY5BntP8KKcJ6WjY1d/Recruitment-Designs?node-id=26-10553&t=RtOzH7yk4J4ByBY6-4)
 
 ### Step 7: Build a Hashtag Search Page
 
