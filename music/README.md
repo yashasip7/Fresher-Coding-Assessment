@@ -1,16 +1,22 @@
 # Music Library Manager
 
-The goal of this problem is to create a Music Library Manager in a step-by-step process, incrementally adding features. You will need to build a CLI (Command Line Interface).
+The goal of this problem is to create a Music Library Manager in a step-by-step process, incrementally adding features. 
 
-## Step 1: List Files
+You will need to build a CLI (Command Line Interface) tool to solve this problem. The CLI will take in a directory as the input, and the commands that need to be executed must all run recursively over the given directory, i.e., the commands must be executed for all subdirectories of the given input directory.
 
-Set up the project in the language of your choice. Define the basic structure of the program, and get a working implementation of taking a directory as an input, and list down all the music files present in that folder recursively.
+You can set up the project in the language of your choice.
 
 Please include documentation (in a file called `SETUP.md`) on any prerequisites we would need to have installed to run your program.
 
+This exercise has included some music files to help you with test data. You can find them [here](Music/).
+
+## Step 1: List Files
+
+Take in one argument as input: a directory the user specifies. Your program must list out all music files in that directory to stdout. 
+
 ### Expected Outcome
 
-When user runs the following command:
+When a user runs the following command:
 
 ```shell
 <program> --input <path to music folder> --list-files
@@ -29,7 +35,7 @@ Anti-Hero.mp3
 
 ## Step 2: Show Metadata
 
-The next step is to read and show the metadata of the files you listed in Step 1.
+The next step is to read and show the metadata of the files you listed in [Step 1](#step-1-list-files).
 
 For example, an MP3 file contains information regarding the name of the Song (Billie Jean), name of the Artist (Michael Jackson), Album (Thriller), and other such information. See [this](https://en.wikipedia.org/wiki/ID3) for a reference.
 
@@ -37,10 +43,10 @@ You can use a library available for your language of choice to parse the metadat
 
 ### Expected Outcome
 
-When user runs the following command:
+When a user runs the following command:
 
 ```shell
-<program> --input Music/ --show-metadata
+<program> --input <path to music folder> --show-metadata
 ```
 
 The output should be like this:
@@ -59,6 +65,9 @@ Album: 1989
 ____________________
 ```
 
+> [!NOTE]
+> All the files must be listed in a similar manner, not just the first two.
+
 ## Step 3: Grouping
 
 Once you are able to read metadata, it’s time to organize the files accordingly. Allow the user to organize their library based on the following parameters:
@@ -69,7 +78,7 @@ Once you are able to read metadata, it’s time to organize the files accordingl
 
 ### Expected Outcome
 
-Suppose that, in a particular music library, the user has the following songs:
+Suppose that, in a particular music library, the user has the following songs in the `Music` folder:
 
 ```text
 Music
@@ -85,10 +94,10 @@ The user should be able to organize it in the following way:
 
 #### By Artist
 
-When user runs the following command:
+When a user runs the following command:
 
 ```shell
-<program> --input Music/ --group-by ARTIST
+<program> --input <path to music folder> --group-by ARTIST
 ```
 
 The output should be like this:
@@ -107,10 +116,10 @@ Music
 
 #### By Album
 
-When user runs the following command:
+When a user runs the following command:
 
 ```shell
-<program> --input Music/ --group-by ALBUM
+<program> --input <path to music folder> --group-by ALBUM
 ```
 
 The output should be like this:
@@ -131,10 +140,10 @@ Music
 
 #### By Artist and Album
 
-When user runs the following command:
+When a user runs the following command:
 
 ```shell
-<program> --input Music/ --group-by ARTIST_ALBUM
+<program> --input <path to music folder> --group-by ARTIST_ALBUM
 ```
 
 The output should be like this:
@@ -155,8 +164,6 @@ Music
         └── Anti-Hero.mp3
 ```
 
-Files that do not have an album should be put in a `Singles` folder. Files with incomplete metadata should be put in a separate folder called `Incomplete Metadata`.
-
 ## Step 4: Reorganize Files - Dry Run
 
 The intention here is to enable users to reorganize their files in the file system based on file metadata. This command should specify what changes will be made on the file system based on the criteria to reorganize by.
@@ -167,10 +174,10 @@ Note that no actual file reorganization should happen as part of this step - onl
 
 #### By Artist
 
-When user runs the following command:
+When a user runs the following command:
 
 ```shell
-<program> --input Music/ --reorganize-by ARTIST --dry-run
+<program> --input <path to music folder> --reorganize-by ARTIST --dry-run
 ```
 
 The output should be like this:
@@ -188,11 +195,11 @@ Music/Anti-Hero.mp3 --->  Music/Taylor Swift/Anti-Hero.mp3
 
 #### By Album
 
-This is the similar to By Artist, but for albums.
+This is the similar to [By Artist](#by-artist-1), but for albums.
 
 #### By Artist & Album
 
-This is the similar to By Artist, but for both artist and album. See the output of Step 3 for an example.
+This is the similar to [By Artist](#by-artist-1), but for both artist and album. See the output of [Step 3](#step-3-grouping) for an example.
 
 ## Step 5: Reorganize Files
 
@@ -202,10 +209,10 @@ This is an extension to the previous step. In this step, the files should be reo
 
 #### By Artist
 
-When user runs the following command:
+When a user runs the following command:
 
 ```shell
-<program> --input Music/ --reorganize-by ARTIST
+<program> --input <path to music folder> --reorganize-by ARTIST
 ```
 
 The output should be like this:
@@ -223,29 +230,29 @@ In addition, the files should actually move and be renamed as necessary.
 
 #### By Album
 
-This is the similar to By Artist, but for albums.
+This is the similar to [By Artist](#by-artist-2), but for albums.
 
 #### By Artist & Album
 
-This is the similar to By Artist, but for both artist and album.
+This is the similar to [By Artist](#by-artist-2), but for both artist and album.
 
-## Step 6: Fetch Metadata from the Internet
+## Step 6: Displaying Metadata from the Internet
 
-For files that do not have proper metadata tags, APIs can be used that would fetch the metadata from the internet. We can make an API call to search for any songs present with the name similar to file’s name. This will return a list of matching songs, out of which the user can select which metadata suits the best, and change the metadata of that file accordingly.
+For files that do not have proper metadata tags, APIs can be used that would fetch the metadata from the internet. The program should make an API call to search for any songs present with the name similar to file’s name. This will return a list of matching songs, and display the possible metadata for that file accordingly.
 
 Potentially useful APIs:
 
 - [https://musicbrainz.org/](https://musicbrainz.org/)
-- Music services like Spotify, Apple Music, Shazam also provide APIs
+- Music services like Spotify, Apple Music, and Shazam also provide APIs
 
-Please be wary of the fact that these services often have rate limits and exceeding may prevent your ability to solve this part of the problem.
+Please be wary of the fact that these services often have rate limits. Calling the APIs too many times may prevent your ability to solve this part of the problem.
 
 ### Expected Outcome
 
-When user runs the following command:
+When a user runs the following command:
 
 ```shell
-<program> --input Music/ --suggest-metadata-fixes
+<program> --input <path to music folder> --suggest-metadata-matches
 ```
 
 The output should be like this:
@@ -276,22 +283,25 @@ Top 3 matches:
    Artist: Fiona Apple
 ```
 
-## Step 7: Fix Metadata from the Internet
+> [!NOTE]
+> Metadata suggestions for all the files must be listed in a similar manner, not just the first two.
 
-This is an extension to Step 6. In addition to fetching metadata from the internet, this command should allow a user to fix the metadata in files that are missing metadata.
+## Step 7: Update Metadata from the Internet
+
+This is an extension to [Step 6](#step-6-displaying-metadata-from-the-internet). In addition to displaying metadata from the internet, this command should allow a user to update the metadata in files.
 
 ### Expected Outcome
 
-When user runs the following command:
+When a user runs the following command:
 
 ```shell
-<program> --input Music/ --fix-metadata
+<program> --input <path to music folder> --update-metadata
 ```
 
 The output should be like this:
 
 ```text
-File is missing metadata: Music/Thriller.mp3
+File: Music/Thriller.mp3
 Top 3 matches:
 1. Song: Thriller
    Album: The Thriller
@@ -302,13 +312,13 @@ Top 3 matches:
 3. Song: Thriller
    Album: Thriller
    Artist: Michael Jackson
-Do you wish to fix (Y/N)?
+Do you wish to update (Y/N)?
 Y
 Select correct choice (1, 2, 3):
 2
-Metadata fixed.
+Metadata updated.
 ---
-File is missing metadata: Music/Smooth Criminal.mp3
+File: Music/Smooth Criminal.mp3
 Top 3 matches:
 1. Song: Smooth Criminal
    Album: Bad
@@ -319,6 +329,9 @@ Top 3 matches:
 3. Song: Criminal
    Album: Tidal
    Artist: Fiona Apple
-Do you wish to fix (Y/N)?
+Do you wish to update (Y/N)?
 N
 ```
+
+> [!NOTE]
+> Metadata suggestions for all the files must be listed in a similar manner, not just the first two.
