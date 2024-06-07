@@ -108,7 +108,7 @@ Write a program takes takes a CSV in the Basic Scores format, cleans the file (a
 When user runs the following command:
 
 ```bash
-<program> to-parquet --input <path to input csv file> --output <path to cleaned parquet file>
+<program> to_parquet --input <path to input csv file> --output <path to cleaned parquet file>
 ```
 
 Your program should follow all the same rules outlined in Step 1, but instead of producing a CSV file, it should produce a parquet file.
